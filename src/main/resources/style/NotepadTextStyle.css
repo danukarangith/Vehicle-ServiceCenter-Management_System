@@ -1,0 +1,14 @@
+.text-area {
+    -fx-font-family: Arial;
+    -fx-font-size: 16px;
+    -fx-text-fill: #333;
+    -fx-background-color: #F9F5F6;
+    -fx-padding: 5px;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+.text-area:focused {
+    -fx-border-color: #007BFF;
+    -fx-border-width: 1px;
+}

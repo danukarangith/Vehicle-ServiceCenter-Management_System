@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="signupcontext" prefHeight="602.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.vehiServePro.controller.SignupPageFormController">
+   <children>
+      <ImageView fitHeight="602.0" fitWidth="969.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/Frame21.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" alignment="CENTER" layoutX="107.0" layoutY="259.0" prefHeight="42.0" prefWidth="292.0" styleClass="text-field" stylesheets="@../style/textField.css" />
+      <TextField fx:id="txtEmail" alignment="CENTER" layoutX="106.0" layoutY="420.0" prefHeight="42.0" prefWidth="292.0" styleClass="text-field" stylesheets="@../style/textField.css" />
+      <Text layoutX="111.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Text>
+      <Button layoutX="196.0" layoutY="518.0" mnemonicParsing="false" onAction="#btnRegisterOnAction" prefHeight="30.0" prefWidth="92.0" styleClass="linear-button" stylesheets="@../style/LoginButton.css" text="Sign up">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="txtPasswrd" alignment="CENTER" layoutX="106.0" layoutY="340.0" prefHeight="42.0" prefWidth="292.0" styleClass="text-field" stylesheets="@../style/textField.css" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="117.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/img_8.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="117.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/img_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="117.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/img_11.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="104.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="104.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email address">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Hyperlink layoutX="271.0" layoutY="475.0" onAction="#gotoSigninPage" prefHeight="24.0" prefWidth="135.0" styleClass="hyperlink-forgot-password" stylesheets="@../style/Forgot%20password.css" text="Back to Sign in" textFill="#ff5e0e" />
+   </children>
+</AnchorPane>

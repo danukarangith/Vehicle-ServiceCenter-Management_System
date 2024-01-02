@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2023-12-01T10:14:45 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_Landscape" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0c62ff0f-6650-4614-9235-45cc59bf1b4d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (8)"/>
+	<queryString>
+		<![CDATA[select * from payment]]>
+	</queryString>
+	<field name="payment_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="customer_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="payment_amount" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="payment_method" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="detail" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="payment_id1" class="java.lang.Integer" resetType="Column" calculation="Count">
+		<variableExpression><![CDATA[$F{payment_id}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="170" y="21" width="320" height="40" uuid="b8b7a82a-98b2-40d9-a06f-204a8dc4c768">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[LEO AUTO CARE SERVICE INVOICE]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="56" splitType="Stretch">
+			<staticText>
+				<reportElement x="-10" y="0" width="100" height="30" uuid="a93baf3d-f20f-4b32-9b91-15479ae1f6e6"/>
+				<text><![CDATA[Payment ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="109" y="3" width="100" height="30" uuid="7d6be67b-167a-4f95-ba4a-e15fba5841a0"/>
+				<text><![CDATA[Customer Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="234" y="3" width="100" height="30" uuid="e73dfb26-1b86-41a5-a758-a6ec451ef68d"/>
+				<text><![CDATA[payment Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="363" y="5" width="100" height="30" uuid="4773a738-eacc-425f-a72f-f8a47f3b65f9"/>
+				<text><![CDATA[payment Method]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="519" y="5" width="100" height="30" uuid="e76d1bd4-efef-4747-874d-aa2ebda81916"/>
+				<text><![CDATA[details]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement x="109" y="2" width="100" height="30" uuid="863c64a1-2de7-45b8-a715-f93690eec8f9"/>
+				<textFieldExpression><![CDATA[$F{customer_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-10" y="4" width="100" height="30" uuid="48bff6e2-595c-49e5-84e7-589893279b62"/>
+				<textFieldExpression><![CDATA[$F{payment_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="4" width="100" height="30" uuid="de08fc7c-dc1c-4d50-a27f-82641ca39358"/>
+				<textFieldExpression><![CDATA[$F{payment_amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="362" y="3" width="100" height="30" uuid="2198f077-9230-4473-b7e9-fb0f76dc3161"/>
+				<textFieldExpression><![CDATA[$F{payment_method}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="520" y="4" width="100" height="30" uuid="1ddabb55-6eeb-4f26-90ae-b4184619c2f3"/>
+				<textFieldExpression><![CDATA[$F{detail}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="342" y="5" width="220" height="30" uuid="43d995ba-999c-490e-a677-7fd3608250a9"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[TANK YOU COME AGAIN!]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

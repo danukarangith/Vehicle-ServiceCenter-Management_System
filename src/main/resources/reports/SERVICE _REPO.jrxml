@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2023-11-23T11:40:06 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SERVICE _REPO" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5f8a6233-4b01-4c2e-9987-89f52abe8529">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (5)"/>
+	<queryString>
+		<![CDATA[select * from service_detail]]>
+	</queryString>
+	<field name="service_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="customer_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vehicle_number" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="service_date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="service_time" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="details" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="employee_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="120" y="17" width="430" height="30" uuid="4a3cb2c0-28a9-4e94-810e-68664c36d571"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Service Detail Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="5" width="229" height="30" uuid="c6fc408d-e3bd-4d3f-88bb-1f2916852afb"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Leo Auto Care Service Text]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="71" splitType="Stretch">
+			<staticText>
+				<reportElement x="-14" y="0" width="100" height="30" uuid="9722aaa6-495d-46c7-b216-2a4bf749703a"/>
+				<text><![CDATA[service_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="64" y="0" width="100" height="30" uuid="e4dfc851-66c7-4dc8-ae6f-52830d6f002b"/>
+				<text><![CDATA[customer_name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="158" y="0" width="100" height="30" uuid="27fec15e-537c-4b23-9087-a0596d529e36"/>
+				<text><![CDATA[vehicle_number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="252" y="0" width="100" height="30" uuid="9c2cb747-c167-4d6f-a1e8-ecde6e161d64"/>
+				<text><![CDATA[service_date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="325" y="0" width="100" height="30" uuid="4ad4fd4b-3a32-47e1-8b85-fcb942ba05f3"/>
+				<text><![CDATA[service_time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="412" y="0" width="100" height="30" uuid="c16db718-f822-46cd-ba1b-956f312e93b0"/>
+				<text><![CDATA[details]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="479" y="0" width="100" height="30" uuid="2de7c5b4-1515-4544-9d03-d82d913cb647"/>
+				<text><![CDATA[employee_name]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="53" y="30" width="100" height="30" uuid="8b8af0c4-b7ae-440b-9049-b61a2000c361"/>
+				<textFieldExpression><![CDATA[$F{customer_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="29" width="100" height="30" uuid="6e5e2efc-7026-47c4-ab2b-06249f962e39"/>
+				<textFieldExpression><![CDATA[$F{vehicle_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="242" y="31" width="100" height="30" uuid="33c8e23b-84d0-4e66-8a11-fb22e166ceeb"/>
+				<textFieldExpression><![CDATA[$F{service_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="31" width="100" height="30" uuid="bbe65a9c-b62c-4738-bfc5-38eac5d9b365"/>
+				<textFieldExpression><![CDATA[$F{service_time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="28" width="100" height="30" uuid="8ee96411-df6c-409d-a000-58dd224b4174"/>
+				<textFieldExpression><![CDATA[$F{details}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-16" y="29" width="100" height="30" uuid="4f7fbb58-e1cb-45a4-897c-bedce2c361eb"/>
+				<textFieldExpression><![CDATA[$F{service_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="491" y="27" width="100" height="30" uuid="edd52280-7346-46c6-843b-4e17e7e67c57"/>
+				<textFieldExpression><![CDATA[$F{employee_name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

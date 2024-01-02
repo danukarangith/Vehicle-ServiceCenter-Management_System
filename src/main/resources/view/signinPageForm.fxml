@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="homepage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.vehiServePro.controller.SigninPageFormController">
+   <children>
+      <ImageView fitHeight="609.0" fitWidth="969.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/Frame22.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUserName" alignment="CENTER" layoutX="558.0" layoutY="285.0" prefHeight="40.0" prefWidth="281.0" styleClass="text-field" stylesheets="@../style/textField.css" />
+      <Button layoutX="645.0" layoutY="467.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="32.0" prefWidth="89.0" styleClass="linear-button" stylesheets="@../style/LoginButton.css" text="Sign in">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="txtPassword" alignment="CENTER" layoutX="557.0" layoutY="373.0" prefHeight="40.0" prefWidth="281.0" styleClass="text-field" stylesheets="@../style/textField.css" />
+      <Hyperlink layoutX="677.0" layoutY="428.0" onAction="#hyperSignUpOnAction" styleClass="hyperlink-forgot-password" stylesheets="@../style/ForgotPassword.css" text="Forgot Password ?" textFill="#3f4143" />
+      <Text layoutX="557.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="567.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/img_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="565.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/img_4.png" />
+         </image>
+      </ImageView>
+      <Button ellipsisString="round" layoutX="888.0" layoutY="41.0" mnemonicParsing="false" onAction="#appStopOnAction" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 100; -fx-opacity: 0.8;" styleClass="round-button" stylesheets="@../style/LoginPageStyle.css" />
+      <Text layoutX="558.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Hyperlink layoutX="749.0" layoutY="523.0" onAction="#gotoSignupPage" text="Create one" textFill="#f2741b">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Hyperlink>
+      <Text layoutX="587.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dont't have an account?" wrappingWidth="170.26123046875" />
+   </children>
+
+</AnchorPane>

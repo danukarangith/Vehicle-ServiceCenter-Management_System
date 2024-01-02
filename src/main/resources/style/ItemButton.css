@@ -1,0 +1,18 @@
+.button {
+    -fx-background-color: #11009E; /* Set the background color */
+    -fx-text-fill: white; /* Set the text color */
+    -fx-font-size: 20px; /* Set the font size */
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px; /* Set the padding */
+    -fx-background-radius: 30 30 30 30;
+}
+
+.button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #00A9FF; /* Change the background color on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #362FD9; /* Change the background color when pressed */
+
+}

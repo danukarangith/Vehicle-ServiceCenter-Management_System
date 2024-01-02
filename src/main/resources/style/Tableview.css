@@ -1,0 +1,30 @@
+.table-view {
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+.table-view .column-header {
+    -fx-background-color: #00A9FF;
+    -fx-font-weight: bold;
+
+}
+
+.table-row-cell {
+    -fx-background-color: #ffffff;
+
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #a6d8ff;
+}
+
+.table-cell {
+    -fx-alignment: CENTER;
+    -fx-padding: 5px;
+}

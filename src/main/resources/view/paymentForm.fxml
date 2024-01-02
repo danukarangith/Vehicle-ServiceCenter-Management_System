@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1014.0" prefWidth="1658.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.vehiServePro.controller.PaymentController">
+   <children>
+      <ImageView fitHeight="1066.0" fitWidth="1725.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/Frame6(1).png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtId" layoutX="232.0" layoutY="257.0" prefHeight="60.0" prefWidth="431.0" />
+      <RadioButton fx:id="txtMethod" layoutX="509.0" layoutY="791.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="189.0" style="-fx-background-color: white;" text="Via Card">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="txtName" layoutX="237.0" layoutY="426.0" prefHeight="60.0" prefWidth="431.0" />
+      <TextField fx:id="txtAmount" layoutX="240.0" layoutY="608.0" prefHeight="60.0" prefWidth="431.0" />
+      <TextField fx:id="txtDetail" layoutX="792.0" layoutY="258.0" prefHeight="60.0" prefWidth="431.0" />
+      <Text fill="#f8f5f5" layoutX="248.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment ID">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#f8f5f5" layoutX="247.0" layoutY="733.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Method">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#f8f5f5" layoutX="238.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#f8f5f5" layoutX="248.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Amount">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#f8f5f5" layoutX="798.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details About Service">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="txtMethod" layoutX="244.0" layoutY="791.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="189.0" style="-fx-background-color: white;" text="Via Cash">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <Text layoutX="232.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Manage">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Button layoutX="782.0" layoutY="431.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="57.0" prefWidth="233.0" style="-fx-background-color: #D8B4F8;" text="Save">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="1094.0" layoutY="432.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="57.0" prefWidth="233.0" style="-fx-background-color: #FFFB73;" text="Update">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="1390.0" layoutY="433.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="57.0" prefWidth="233.0" style="-fx-background-color: #FA7070;" text="Delete Records">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="1042.0" layoutY="583.0" mnemonicParsing="false" onAction="#printOnAction" prefHeight="57.0" prefWidth="233.0" style="-fx-background-color: #45FFCA;" text="Print Bill">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="myImage" fitHeight="225.0" fitWidth="300.0" layoutX="857.0" layoutY="716.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/image-removebg-preview(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="225.0" fitWidth="300.0" layoutX="1367.0" layoutY="713.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/image-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

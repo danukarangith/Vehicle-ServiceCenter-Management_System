@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.vehiServePro.controller.NotepadController">
+    <children>
+        <MenuBar stylesheets="@../style/MenuStyle.css" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu text="File">
+                    <items>
+                        <MenuItem onAction="#handleNew" text="New" />
+                        <MenuItem onAction="#handleOpen" text="Open" />
+                        <MenuItem onAction="#handleSave" text="Save" />
+                        <MenuItem onAction="#handleSaveAs" text="Save As" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <TextArea fx:id="textArea" layoutY="46.0" prefHeight="354.0" prefWidth="600.0" stylesheets="@../style/NotepadTextStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.0" />
+      <Text layoutX="186.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Special Notes Here">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+    </children>
+
+</AnchorPane>

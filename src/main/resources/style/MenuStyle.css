@@ -1,0 +1,20 @@
+.menu-bar {
+    -fx-background-color: #F0DBAF;
+    -fx-text-fill: white;
+}
+
+.menu {
+    -fx-background-color: #F0DBAF;
+}
+
+.menu-item {
+    -fx-text-fill: white;
+}
+
+.menu-item:hover {
+    -fx-background-color: #555;
+}
+
+.menu-item:pressed {
+    -fx-background-color: #777;
+}

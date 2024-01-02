@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="629.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.vehiServePro.controller.VehicleTableController">
+   <children>
+      <TableView fx:id="tblVehicle" layoutX="28.0" layoutY="129.0" prefHeight="464.0" prefWidth="555.0" stylesheets="@../style/Tableview.css">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="82.0" text="vehicle ID" />
+          <TableColumn fx:id="colCid" prefWidth="100.0" text="Customer ID" />
+            <TableColumn fx:id="colNum" prefWidth="124.0" text="Vehicle Number" />
+            <TableColumn fx:id="colBrand" prefWidth="128.0" text="Vehicle  Brand" />
+            <TableColumn fx:id="colType" prefWidth="120.0" text="Vehicle Type" />
+        </columns>
+      </TableView>
+      <Text layoutX="150.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Full Details Table">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

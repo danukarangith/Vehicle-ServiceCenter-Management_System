@@ -1,0 +1,15 @@
+.label-style {
+    -fx-font-size: 18px;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #3498DB;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-animation: fadeEffect 2s infinite;
+}
+
+@keyframes fadeEffect {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}

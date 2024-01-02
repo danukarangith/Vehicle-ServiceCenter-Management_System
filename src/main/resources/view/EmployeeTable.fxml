@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="626.0" stylesheets="@../style/Tableview.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.vehiServePro.controller.EmployeeTableController">
+   <children>
+      <TableView fx:id="tblEmployee" layoutX="23.0" layoutY="112.0" prefHeight="474.0" prefWidth="592.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="94.0" text="Emp Name" />
+          <TableColumn fx:id="colId" prefWidth="77.0" text="Emp ID" />
+            <TableColumn fx:id="colContact" prefWidth="119.0" text=" Emp Contact" />
+            <TableColumn fx:id="colAddress" prefWidth="110.0" text="Emp Address" />
+            <TableColumn fx:id="colType" prefWidth="93.0" text="Job Role" />
+            <TableColumn fx:id="colUser" prefWidth="98.0" text="colUser" />
+        </columns>
+      </TableView>
+      <Text fill="#331d2c" layoutX="121.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Details Full Table">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="81.0" fitWidth="108.0" layoutX="7.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/img_14.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="108.0" layoutX="504.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/img_15.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+.linear-button {
+    -fx-background-color: linear-gradient(to right, #029AE5, #106B95);
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-padding: 8px;
+ -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+.linear-button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: linear-gradient(to right, #45CFDD,  #029AE5);
+}

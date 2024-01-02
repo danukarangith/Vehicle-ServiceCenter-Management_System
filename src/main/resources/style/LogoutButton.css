@@ -1,0 +1,5 @@
+
+.linear-button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: linear-gradient(to right, #FF6969,  #FF6969);
+}

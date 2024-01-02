@@ -1,0 +1,30 @@
+.text-field {
+    -fx-background-color: white;
+    -fx-text-fill: #333;
+    -fx-prompt-text-fill: #999;
+    -fx-font-size: 16px;
+    -fx-padding: 10px;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: #999;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.text-field:focused {
+    -fx-border-color: #00bcd4;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.text-field:focused + .label {
+    -fx-translate-y: -20px;
+    -fx-font-size: 12px;
+    -fx-text-fill: #00bcd4;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.text-field + .label {
+    -fx-translate-y: 20px;
+    -fx-font-size: 16px;
+    -fx-text-fill: #999;
+    -fx-transition: all 0.3s ease-in-out;
+}

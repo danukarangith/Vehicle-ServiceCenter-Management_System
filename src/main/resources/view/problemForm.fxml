@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="273.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.vehiServePro.controller.ProblemFormController">
+   <children>
+      <ImageView fitHeight="273.0" fitWidth="456.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/Frame18.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

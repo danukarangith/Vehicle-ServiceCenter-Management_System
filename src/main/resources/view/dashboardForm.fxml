@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1011.0" prefWidth="1658.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.vehiServePro.controller.dashboardFormController">
+   <children>
+      <AnchorPane layoutX="-6.0" layoutY="-20.0" prefHeight="1014.0" prefWidth="257.0">
+         <children>
+            <ImageView fitHeight="1014.0" fitWidth="279.0" layoutX="1.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/images/Frame25.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="9.0" layoutY="147.0" mnemonicParsing="false" onAction="#gotoDashbord" prefHeight="70.0" prefWidth="269.0" stylesheets="@../style/DashboardButton.css" text="   Dashbord">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="251.0" mnemonicParsing="false" onAction="#gotoCustomerForm" prefHeight="70.0" prefWidth="269.0" stylesheets="@../style/DashboardButton.css" text="   Customer">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="364.0" mnemonicParsing="false" onAction="#gotoVehicleForm" prefHeight="70.0" prefWidth="269.0" stylesheets="@../style/DashboardButton.css" text="  Vehicles">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="464.0" mnemonicParsing="false" onAction="#gotoStockForm" prefHeight="70.0" prefWidth="269.0" stylesheets="@../style/DashboardButton.css" text="Stocks">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="580.0" mnemonicParsing="false" onAction="#goReservation" prefHeight="70.0" prefWidth="269.0" stylesheets="@../style/DashboardButton.css" text="     Reservation">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="683.0" mnemonicParsing="false" onAction="#gotoServiceDetail" prefHeight="70.0" prefWidth="269.0" stylesheets="@../style/DashboardButton.css" text="   Service ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="9.0" layoutY="789.0" mnemonicParsing="false" onAction="#gotoEmployeeForm" prefHeight="70.0" prefWidth="269.0" stylesheets="@../style/DashboardButton.css" text="   Employee">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="26.0" layoutY="915.0" mnemonicParsing="false" onAction="#gotofirstPage" prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: white;" styleClass="linear-button" stylesheets="@../style/LogoutButton.css" text="         Log Out" textFill="#2c2929">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="20.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/dashboard(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="15.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/customer(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="20.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/car.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="17.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/out-of-stock.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="16.0" layoutY="589.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/booking.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="25.0" layoutY="698.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/customer-support.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="21.0" layoutY="806.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/team-management.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="47.0" layoutY="922.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/logout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="dash" layoutX="277.0" layoutY="76.0" prefHeight="934.0" prefWidth="1658.0">
+         <children>
+            <Button alignment="CENTER_RIGHT" layoutX="59.0" layoutY="217.0" mnemonicParsing="false" onAction="#tableButtonAction" prefHeight="130.0" prefWidth="340.0" style="-fx-background-color: white; -fx-background-radius: 25; -fx-border-color: black; -fx-border-radius: 25; -fx-border-width: 3;" text="Calculator">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER_RIGHT" layoutX="468.0" layoutY="128.0" mnemonicParsing="false" onAction="#notepadbuttonAction" prefHeight="130.0" prefWidth="340.0" style="-fx-background-color: white; -fx-background-radius: 25; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 25;" text="Notepad">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="90.0" fitWidth="70.0" layoutX="80.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/calculator.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="501.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/notepad.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="1484.0" layoutY="19.0" mnemonicParsing="false" onAction="#hotlineAction" prefHeight="45.0" prefWidth="141.0" style="-fx-background-color: E5D4FF; -fx-background-radius: 30;" text="Any Problem ?">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER_RIGHT" layoutX="51.0" layoutY="58.0" mnemonicParsing="false" onAction="#goPayment" prefHeight="130.0" prefWidth="340.0" style="-fx-background-color: white; -fx-background-radius: 25; -fx-border-color: black; -fx-border-radius: 25; -fx-border-width: 3;" text="Payment">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="90.0" fitWidth="88.0" layoutX="77.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/cash-payment.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="34.0" layoutY="374.0" prefHeight="516.0" prefWidth="668.0" style="-fx-background-color: white; -fx-background-radius: 30; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 30;">
+               <children>
+                  <ImageView fitHeight="298.0" fitWidth="282.0" layoutX="340.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/images/Frame26.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="14.0" layoutY="117.0" prefHeight="72.0" prefWidth="268.0" style="-fx-border-color: black;">
+                     <children>
+                        <Circle fill="#5bb2ff" layoutX="27.0" layoutY="35.0" radius="19.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text layoutX="81.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Engine oil">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="13.0" layoutY="219.0" prefHeight="72.0" prefWidth="268.0" style="-fx-border-color: black;">
+                     <children>
+                        <Circle fill="#05dbf2" layoutX="30.0" layoutY="40.0" radius="19.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text layoutX="79.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cleaning liquid">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="13.0" layoutY="317.0" prefHeight="72.0" prefWidth="268.0" style="-fx-border-color: black;">
+                     <children>
+                        <Circle fill="#1351cb" layoutX="30.0" layoutY="36.0" radius="19.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text layoutX="82.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gear oil">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Button layoutX="82.0" layoutY="444.0" mnemonicParsing="false" onAction="#gotoStockForm" prefHeight="39.0" prefWidth="135.0" styleClass="linear-button" stylesheets="@../style/DashboardTestButton.css" text="View More" />
+                  <Text layoutX="177.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Stock">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="793.0" layoutY="371.0" prefHeight="516.0" prefWidth="794.0" style="-fx-background-color: white; -fx-background-radius: 30; -fx-border-color: black; -fx-border-radius: 30; -fx-border-width: 3;">
+               <children>
+                  <ImageView fitHeight="384.0" fitWidth="604.0" layoutX="164.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/images/Frame27.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="129.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly Vehicle Arrival">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="9.0" layoutY="143.0" prefHeight="72.0" prefWidth="244.0" style="-fx-border-color: black;">
+                     <children>
+                        <Text layoutX="7.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X = Vehicle Types">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="9.0" layoutY="234.0" prefHeight="72.0" prefWidth="244.0" style="-fx-border-color: black;">
+                     <children>
+                        <Text layoutX="15.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y= Vehicle Count">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Button layoutX="59.0" layoutY="438.0" mnemonicParsing="false" onAction="#gotoVehicleForm" prefHeight="39.0" prefWidth="135.0" styleClass="linear-button" stylesheets="@../style/DashboardTestButton.css" text="View More" />
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tblResrvation" layoutX="865.0" layoutY="79.0" prefHeight="236.0" prefWidth="667.0" stylesheets="@../style/Tableview.css">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="75.0" text="Re ID" />
+                <TableColumn fx:id="colEmail" prefWidth="212.0" text="Email" />
+                  <TableColumn fx:id="colvehNum" prefWidth="129.0" text="Vehicle Num" />
+                  <TableColumn fx:id="colDate" prefWidth="107.0" text="Date" />
+                  <TableColumn fx:id="colTime" prefWidth="143.0" text="Time" />
+              </columns>
+            </TableView>
+            <Text layoutX="1015.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservation Details">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <AnchorPane layoutX="269.0" layoutY="-1.0" prefHeight="76.0" prefWidth="1658.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="clock" alignment="CENTER" layoutX="601.0" layoutY="13.0" prefHeight="47.0" prefWidth="296.0" style="-fx-background-color: white; -fx-background-radius: 30; -fx-border-width: 3; -fx-border-radius: 30;">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="1482.0" layoutY="20.0" text="Mr.danuka rangith">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Text layoutX="1483.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="70.0" fitWidth="80.0" layoutX="1274.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/img_20.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="75.0" layoutX="1385.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/img_21.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="dateSet" alignment="CENTER" layoutX="991.0" layoutY="31.0" prefHeight="47.0" prefWidth="296.0" style="-fx-background-color: white; -fx-background-radius: 30; -fx-border-width: 3; -fx-border-radius: 30;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Text fill="#b6bbc4" layoutX="17.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="284.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/wave_9437514.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
