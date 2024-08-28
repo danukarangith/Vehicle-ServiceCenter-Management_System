@@ -31,6 +31,32 @@ This is a comprehensive Vehicle Management System developed using Java, JavaFX, 
    ```bash
    git clone <repository-url>
 
+   ## Database Setup:
+
+1. Install MySQL and create a new database for the application.
+2. Import the provided SQL file to set up the database schema and initial data.
+
+## Configure Database and Email Connection:
+
+1. Update the database connection settings in the application (e.g., `DB_URL`, `DB_USER`, `DB_PASSWORD`).
+2. Configure the email settings in the application (e.g., SMTP server, port, email credentials) to enable email notifications.
+
+## Build and Run the Application:
+
+1. Compile the Java code using JDK 11.
+2. Run the application from your preferred IDE or terminal.
+
+## Usage:
+
+1. Launch the application and log in with your admin credentials.
+2. Use the navigation menu on the left to access different modules such as Dashboard, Customer, Vehicles, Stocks, Reservation, Service, and Employee.
+3. The application automatically sends email notifications to customers upon adding them to the system, making reservations, or scheduling services.
+4. Generate invoices and service reports using the built-in JasperReports feature.
+5. If the admin forgets their password, they can use the "Forgot Password" option to receive a recovery code via email.
+
+
+## Dashboard 
+
 ![Screenshot from 2024-08-28 23-47-55](https://github.com/user-attachments/assets/e69cfd07-a737-41c7-8219-fdcd1398fbe2)
 
 
