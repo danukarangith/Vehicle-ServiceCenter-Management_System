@@ -31,8 +31,9 @@ This is a comprehensive Vehicle Management System developed using Java, JavaFX, 
    ```bash
    git clone <repository-url>
 
-   ## Database Setup:
+  
 
+ ## Database Setup:
 1. Install MySQL and create a new database for the application.
 2. Import the provided SQL file to set up the database schema and initial data.
 
